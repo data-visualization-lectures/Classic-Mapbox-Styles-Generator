@@ -1,0 +1,29 @@
+{
+  "name": "classic-mapbox-styles-generator",
+  "version": "1.0.0",
+  "description": "- Mapbox Studio で作成した地図タイルを Kepler.gl や Foursquare Studio で用いる   - https://visualizing.jp/mapbox-studio-issue/",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/data-visualization-lectures/Classic-Mapbox-Styles-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/data-visualization-lectures/Classic-Mapbox-Styles-Generator/issues"
+  },
+  "homepage": "https://github.com/data-visualization-lectures/Classic-Mapbox-Styles-Generator#readme",
+  "devDependencies": {
+    "vite": "^7.2.7"
+  }
+}
