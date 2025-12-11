@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mapbox Classic スタイル生成</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <script src="lib/supabase.js" defer></script>
+  <script src="lib/dataviz-auth-client.js" defer></script>
+  <script type="module" crossorigin src="./assets/index-AozVHZS5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CzT2GIdH.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Mapbox Classic スタイル生成</h1>
+    <p>
+      トークンを入力し、スタイルを選んでください。Mapbox Classic スタイル用の「JSONファイル取得のためのURL」を生成します。
+    </p>
+
+    <form id="generator-form">
+      <label for="token">トークン（TOKEN）</label>
+      <input type="text" id="token" name="token" placeholder="pk.XXXXXXXXXXXX" autocomplete="off" required />
+
+      <label for="style">地図タイル（クラシック・スタイル）</label>
+      <select id="style" name="style" required>
+        <option value="">スタイルを選択してください</option>
+      </select>
+
+      <figure id="preview-wrapper" class="preview-wrapper" hidden>
+        <figcaption><strong>スタイル プレビュー</strong></figcaption>
+        <img id="style-preview" alt="" />
+      </figure>
+
+      <button type="submit">URL を生成</button>
+      <p class="message" id="message"></p>
+    </form>
+
+    <section id="result-section" class="result" hidden>
+      <strong>生成された URL</strong>
+      <p id="generated-url"></p>
+      <button type="button" class="secondary" id="download-btn" disabled>
+        JSON をダウンロード
+      </button>
+    </section>
+
+    <footer>
+      <h2>関連リンク</h2>
+      <ul>
+        <li><a href="https://docs.mapbox.com/api/maps/styles/#classic-mapbox-styles" target="_blank"
+            rel="noopener noreferrer">クラシック・スタイルの紹介</a></li>
+        <li><a href="https://console.mapbox.com/account/access-tokens/" target="_blank"
+            rel="noopener noreferrer">トークンの取得ページ</a></li>
+      </ul>
+    </footer>
+  </main>
+
+</body>
+
+</html>
